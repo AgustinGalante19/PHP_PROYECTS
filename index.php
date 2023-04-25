@@ -1,1 +1,5 @@
-<?php echo '<p>Hola Mundo</p>';?>
+<?php
+include_once './templates/header.php';
+?>
+  
+<?php include_once './templates/footer.php'; ?>
