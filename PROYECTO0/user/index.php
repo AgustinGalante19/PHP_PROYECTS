@@ -38,7 +38,7 @@ $usersResponse = $bdConnection->query($usersQuery);
 <script>
   const deleteForms = document.querySelectorAll(".delete-user");
   deleteForms.forEach(form => {
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('click', (event) => {
       event.preventDefault();
       const userId = form.dataset.userid;
       if (confirm(`¿Está seguro que desea eliminar el usuario con ID ${userId}?`)) {
@@ -52,6 +52,7 @@ $usersResponse = $bdConnection->query($usersQuery);
             if (response.ok) {
               console.log(form.parentNode.parentNode)
               alert('El usuario ha sido eliminado correctamente.');
+              location.reload();
             } else {
               alert('Ha ocurrido un error al eliminar el usuario.');
             }

@@ -12,16 +12,16 @@ include_once("../templates/header.php");
 
       <div class="mb-3">
         <label for="username" class="form-label">Username</label>
-        <input type="text" class="form-control" name="username" id="username" aria-describedby="helpId" placeholder="Nombre">
+        <input type="text" class="form-control" name="username" id="username" aria-describedby="helpId" placeholder="Name">
       </div>
 
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
-        <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Apellido">
+        <input type="text" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Lastname">
       </div>
       <div class="mb-3">
         <label for="age" class="form-label">Age</label>
-        <input type="number" class="form-control" name="age" id="email" aria-describedby="helpId" placeholder="Apellido">
+        <input type="number" class="form-control" name="age" id="email" aria-describedby="helpId" placeholder="Age">
       </div>
       <button type="submit" class="btn btn-success">Agregar</button>
       <a name="" id="" class="btn btn-primary" href="op1.php" role="button">Cancelar</a>
